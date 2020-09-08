@@ -195,6 +195,39 @@ h5, h6{
 /* header-right */
 
 
+/* chat */
+.inside-chat, .inside-chat-none{
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  margin-top: 50px;
+  padding: 5px;
+}
+
+
+.chat{
+  display: flex;
+  background-color: #d5f9ba;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+
+.chat-none{
+  background-color: #d5f9ba;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 80px;
+}
+
+.orario{
+  margin-top: 30px;
+  align-self: flex-end;
+}
+/* <!-- /chat --> */
+
+
 /* <!-- player --> */
 .player{
   height: calc( 100vh - 95vh);
@@ -206,10 +239,14 @@ h5, h6{
 
 }
 
-.send{
+#send{
   width: 40vw;
   height: 4vh;
   border-style: none;
+}
+
+.template{
+  display: none;
 }
 
 /* <!-- /player --> */
