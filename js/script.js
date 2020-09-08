@@ -1,0 +1,18 @@
+// start
+$(document).ready(
+  function (){
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+);
