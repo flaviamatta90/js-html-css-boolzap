@@ -170,6 +170,7 @@ h5, h6{
   height: 100%;
 }
 
+/* header-right */
 .header-right{
   height: calc(100vh - 93vh);
   background-color: #f2f2f2;
@@ -191,12 +192,29 @@ h5, h6{
 .avatar-chat img{
   margin: 5px;
 }
+/* header-right */
 
+
+/* <!-- player --> */
 .player{
-  background-color: purple;
   height: calc( 100vh - 95vh);
   margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+
 }
+
+.send{
+  width: 40vw;
+  height: 4vh;
+  border-style: none;
+}
+
+/* <!-- /player --> */
+
+
 /* /right side */
 
 /* /container */
