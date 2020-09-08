@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.outside-container{
+
+}
+
+.header-outside{
+  width: 100vw;
+  height: calc( 100vh - 85vh);
+  background-color: #009688;
+}
+
+.main-outside{
+  width: 100vw;
+  height: calc( 100vh - 15vh);
+  background-color: #dadbd3;
+}
+
+.container{
+  width: 70vw;
+  height: 94vh;
+  background-color: blue;
+  position: fixed;
+  top: 3%;
+  left: 15%;
+  z-index: 2;
+
+}
