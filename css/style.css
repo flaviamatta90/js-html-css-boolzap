@@ -1,13 +1,11 @@
+/* start */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.outside-container{
-
-}
-
+/* container outside */
 .header-outside{
   width: 100vw;
   height: calc( 100vh - 88vh);
@@ -19,7 +17,10 @@
   height: calc( 100vh - 15vh);
   background-color: #dadbd3;
 }
+/* /container outside */
 
+
+/* container */
 .container{
   display: flex;
   position: fixed;
@@ -30,30 +31,54 @@
   z-index: 1;
 }
 
+/* left side */
 .left{
   background-color: yellow;
   width: 30%;
   height: 100%;
+
 }
 
 .header-left, .header-right{
   height: calc(100vh - 95vh);
-  background-color: blue;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.img-me{
+  align-self: flex-start;
+}
+
+.me{
+  max-width: 5vw;
+  max-height: 5vh;
+  padding: 2px;
+}
+
+.icon.header{
+  align-self: flex-end;
+}
+
+.icon{
+  color: #b1b1b1;
+  padding: 2px 5px;
+}
 
 .notify{
   height: calc(100vh - 94vh);
   background-color: red;
 }
 
-
 .search{
   height: calc(100vh - 96vh);
   background-color: pink;
 }
+/* /left side */
 
 
+/* right side */
 .right{
   display: flex;
   flex-direction: column;
@@ -62,9 +87,11 @@
   height: 100%;
 }
 
-
 .player{
   background-color: purple;
   height: calc( 100vh - 95vh);
   margin-top: auto;
 }
+/* /right side */
+
+/* /container */
