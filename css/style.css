@@ -10,7 +10,7 @@
 
 .header-outside{
   width: 100vw;
-  height: calc( 100vh - 85vh);
+  height: calc( 100vh - 88vh);
   background-color: #009688;
 }
 
@@ -21,12 +21,50 @@
 }
 
 .container{
+  display: flex;
+  position: fixed;
   width: 70vw;
   height: 94vh;
-  background-color: blue;
-  position: fixed;
   top: 3%;
   left: 15%;
-  z-index: 2;
+  z-index: 1;
+}
 
+.left{
+  background-color: yellow;
+  width: 30%;
+  height: 100%;
+}
+
+.header-left, .header-right{
+  height: calc(100vh - 95vh);
+  background-color: blue;
+}
+
+
+.notify{
+  height: calc(100vh - 94vh);
+  background-color: red;
+}
+
+
+.search{
+  height: calc(100vh - 96vh);
+  background-color: pink;
+}
+
+
+.right{
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  width: 70%;
+  height: 100%;
+}
+
+
+.player{
+  background-color: purple;
+  height: calc( 100vh - 95vh);
+  margin-top: auto;
 }
