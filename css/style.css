@@ -154,7 +154,7 @@ h5, h6{
 }
 
 .contact-list li{
-  margin: 5px 20px;
+  margin: 0px 20px;
 }
 /* /contact */
 
@@ -198,28 +198,19 @@ h5, h6{
 /* chat */
 .inside-chat, .inside-chat-none{
   display: flex;
-  align-items: baseline;
   justify-content: flex-end;
   margin-top: 50px;
   padding: 5px;
 }
 
 
-.chat{
+.chat, .chat-none{
   display: flex;
   background-color: #d5f9ba;
   border-radius: 5px;
-  padding: 10px;
+  padding: 0 10px;
 }
 
-
-
-.chat-none{
-  background-color: #d5f9ba;
-  border-radius: 5px;
-  padding: 10px;
-  margin-top: 80px;
-}
 
 .orario{
   margin-top: 30px;
@@ -245,9 +236,6 @@ h5, h6{
   border-style: none;
 }
 
-.template{
-  display: none;
-}
 
 /* <!-- /player --> */
 
