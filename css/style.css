@@ -25,10 +25,11 @@ li{
 }
 
 a{
+  text-decoration: none;
   color: #000;
 }
 
-h5{
+h5, h6{
   color: #b1b1b1;
 }
 
@@ -62,7 +63,7 @@ h5{
 
 /* left side */
 .left{
-  background-color: yellow;
+  background-color: #f2f2f2;
   width: 30%;
   height: 100%;
 }
@@ -111,14 +112,11 @@ h5{
   margin: 20px 0;
 }
 
-.nounderline a  {
-  text-decoration: none;
-}
-
 .underline a{
   color: #4f7485;
   font-size: 13px;
   margin-top: 0;
+  text-decoration: underline;
 }
 /* <!-- /notify --> */
 
@@ -136,10 +134,29 @@ h5{
   color: #b1b1b1;
   padding-right: 15px;
 }
-/* search */
+/* /search */
+
+/* contact */
+.friends{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  background-color: #f2f2f2;
+}
+
+.avatar{
+  max-width: 7vw;
+  max-height: 7vh;
+  padding: 2px;
+}
+
+.contact-list li{
+  margin: 5px 20px;
+}
+/* /contact */
+
 
 /* /left side */
-
 
 /* right side */
 .right{
