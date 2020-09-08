@@ -5,10 +5,16 @@
   box-sizing: border-box;
 }
 
+
 /* classi generiche */
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+
 .header-left, .header-right{
   height: calc(100vh - 95vh);
-  background-color: #eaeaea;
+  background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,6 +28,9 @@ a{
   color: #000;
 }
 
+h5{
+  color: #b1b1b1;
+}
 
 /* /classi generiche */
 
@@ -94,7 +103,7 @@ a{
   background-color: #fff;
   color: #8edafc;
   padding: 8px;
-  margin: 10px;
+  margin: 8px;
   font-size: 13px;
 }
 
@@ -117,7 +126,15 @@ a{
 /* search */
 .search{
   height: calc(100vh - 96vh);
-  background-color: pink;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.fa-search{
+  color: #b1b1b1;
+  padding-right: 15px;
 }
 /* search */
 
