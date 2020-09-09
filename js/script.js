@@ -38,17 +38,26 @@ function sentMessage(){
 }
 
 
-  setTimeout(function(){
-    var bot = ["ciao", "bene, tu?"];
+setTimeout(function(sentMessage){
 
-    var ricevuto = $(".template .inside-chat").clone();
+  var inputText = $("#sent").val();
 
+  if(inputText != ""){
 
-    ricevuto.find(".messaggio").text(bot[1]);
-    ricevuto.find(".orario").text(hour + ":" + min);
-    $(".chat-side").append(ricevuto);
+  var bot = ["ciao", "bene"];
 
+  var ricevuto = $(".template .inside-chat").clone();
+
+  ricevuto.find(".messaggio").text(bot[1]);
+  ricevuto.find(".orario").text(hour + ":" + min);
+  $(".chat-side").append(ricevuto);
+
+  }
+  console.log(sentMessage);
   }, 1000);
+
+
+
 
   }
 );
