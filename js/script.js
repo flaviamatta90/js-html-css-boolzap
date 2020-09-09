@@ -33,19 +33,9 @@ function sentMessage(){
 
     $(".chat-side").append(templateMessage);
     $("#sent").val("");
-
-
   }
-}
 
-
-function sentMessage(){
-  var inputText = $("#sent").val();
-  
   setTimeout(function(){
-
-    if(inputText != ""){
-
     var bot = ["ciao", "bene"];
 
     var ricevuto = $(".template .inside-chat").clone();
@@ -54,11 +44,10 @@ function sentMessage(){
     ricevuto.find(".orario").text(hour + ":" + min);
     $(".chat-side").append(ricevuto);
 
-  }
+    }, 1000);
 
-  }, 1000)
+}
 
-};
 
 
 
