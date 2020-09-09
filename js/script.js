@@ -23,13 +23,14 @@ function sentMessage(){
 
   if(inputText != ""){
     var templateMessage = $(".template .inside-chat").clone();
-    var date = new Date();
-    // var hours = date. getMinutes();
-    // var time = hours + ":" + minutes;
+
+    var d = new Date();
+    hour = d.getHours();
+    min = d.getMinutes();
 
 
     templateMessage.find(".messaggio").text(inputText);
-    templateMessage.find(".orario").text("14.31");
+    templateMessage.find(".orario").text(hour + ":" + min);
     templateMessage.addClass("inviato");
 
     $(".chat-side").append(templateMessage);
