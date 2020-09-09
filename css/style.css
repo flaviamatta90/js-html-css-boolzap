@@ -21,6 +21,10 @@ a{
   color: #000;
 }
 
+p{
+  font-size: 13px;
+}
+
 h4{
   margin-top: 10px;
 }
@@ -65,7 +69,6 @@ h5, h6{
 
 /* <!-- header-left --> */
 .header-left {
-  height: calc(100vh - 93vh);
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
@@ -77,9 +80,11 @@ h5, h6{
 }
 
 .me{
+  overflow: hidden;
   max-width: 5vw;
   max-height: 5vh;
   margin: 5px;
+  border-radius: 50%;
 }
 
 .icon.header{
@@ -112,7 +117,7 @@ h5, h6{
 }
 
 .notify-list{
-  margin: 20px 0;
+  width: 50%;
 }
 
 .underline a{
@@ -140,10 +145,16 @@ h5, h6{
 /* /search */
 
 /* contact */
+
+.contact{
+  height: calc(100vh - 20vh);
+  overflow-y: auto;
+}
+
 .friends{
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin-top: auto;
   background-color: #f2f2f2;
 }
 
@@ -196,44 +207,79 @@ h5, h6{
 
 
 /* chat */
-.inside-chat, .inside-chat-none{
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 50px;
-  padding: 5px;
+.chat-side{
+  height: 100%;
+  overflow-y: scroll;
+  padding: 20px;
 }
 
-
-.chat, .chat-none{
+.inside-chat{
   display: flex;
+  margin: 10px ;
+}
+
+.chat {
+  position: relative;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.orario{
+  position: absolute;
+  bottom: 1px;
+  right: 5px;
+  font-size: 12px;
+}
+
+.inviato{
+  justify-content: flex-end;
+}
+
+.inviato .chat {
+  background-color: #d5f9ba;
+
+}
+
+.template{
+  align-self: flex-end;
   background-color: #d5f9ba;
   border-radius: 5px;
   padding: 0 10px;
+  display: none;
+}
+
+.templates{
+  display: none;
 }
 
 
-.orario{
-  margin-top: 30px;
-  align-self: flex-end;
-}
 /* <!-- /chat --> */
 
 
 /* <!-- player --> */
 .player{
-  height: calc( 100vh - 95vh);
-  margin-top: auto;
+  height: calc( 100vh - 97vh);
+}
+
+.inside-player{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 26px;
   background-color: #f2f2f2;
-
 }
 
-#send{
+
+#sent{
   width: 40vw;
-  height: 4vh;
+  height: 20px;
   border-style: none;
+}
+
+.sendMessage{
+  cursor: pointer;
 }
 
 
@@ -241,5 +287,6 @@ h5, h6{
 
 
 /* /right side */
+
 
 /* /container */

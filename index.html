@@ -37,7 +37,7 @@
           <ul class="notify-list">
             <li class="nounderline">
               <a  href="#">
-                <h4>Ricevi notifiche di nuovi messaggi</h4></a>
+                <p>Ricevi notifiche di nuovi messaggi</p></a>
             </li>
             <li class="underline">
               <a href="#">Attiva notifiche deskop</a>
@@ -178,53 +178,62 @@
         <!-- /header-right -->
 
         <!-- chat -->
-        <div class="inside-chat">
-          <div class="chat">
-            <div class="messaggio">
-              <h4> Ciao, come stai?</h4>
+        <div class="chat-side">
+          <div class="inside-chat">
+            <div class="chat">
+              <div class="messaggio">
+                Ciao
+              </div>
+              <div class="orario">
+                14.31
+              </div>
             </div>
-            <div class="orario">
-              <h6> 14.31</h6>
-            </div>
-
           </div>
+
+            <div class="inside-chat inviato">
+              <div class="chat">
+                <div class="messaggio">
+                  Ciao, come va?
+                </div>
+                <div class="orario">
+                  14.31
+                </div>
+              </div>
+            </div>
         </div>
 
-        <div class="inside-chat-none">
-          <div class="chat-none">
-            <h4></h4>
+        <div class="template">
+          <div class="inside-chat">
+            <div class="chat">
+              <div class="messaggio"></div>
+              <div class="orario"></div>
+            </div>
           </div>
         </div>
-
-
-
 
         <!-- /chat -->
 
         <!-- player -->
         <div class="player">
-          <div class="emoticon">
-            <i class="icon far fa-smile"></i>
+          <div class="inside-player">
+            <div class="emoticon">
+              <i class="icon far fa-smile"></i>
+            </div>
+            <div class="messenger">
+              <input id="sent" class="sent-message" placeholder= " Scrivi messaggio" type="text" name="invia" value="">
+            </div>
+            <div class="airplain">
+              <i class="sent-message icon far fa-paper-plane"></i>
+            </div>
+            <!-- <div class="microphone">
+              <i class=" icon fas fa-microphone"></i>
+            </div> -->
           </div>
-          <div class="messenger">
-            <input id="send" placeholder= " Scrivi messaggio" type="text" name="invia" value="">
-          </div>
-          <div class="microphone">
-            <i class="icon fas fa-microphone"></i>
-          </div>
-
-
-
-
         </div>
         <!-- /player -->
 
-
-
       </div>
     </div>
-
-
 
 
     <script src="js/script.js" charset="utf-8"></script>
