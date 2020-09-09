@@ -55,8 +55,8 @@ h5, h6{
   position: fixed;
   width: 70vw;
   height: 94vh;
-  top: 3%;
-  left: 15%;
+  top: 3vh;
+  left: 15vw;
   z-index: 1;
 }
 
@@ -73,22 +73,11 @@ h5, h6{
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.img-me{
-  align-self: flex-start;
+  height: 8%;
 }
 
 .me{
-  overflow: hidden;
-  max-width: 5vw;
-  max-height: 5vh;
-  margin: 5px;
   border-radius: 50%;
-}
-
-.icon.header{
-  align-self: flex-end;
 }
 
 .icon{
@@ -100,7 +89,7 @@ h5, h6{
 
 /* <!-- notify --> */
 .notify{
-  height: calc(100vh - 92vh);
+  height: 8%;
   background-color: #8edafc;
   display: flex;
   align-items: center;
@@ -108,7 +97,6 @@ h5, h6{
 
 .icon-bell{
   border-radius: 50%;
-  max-height: 10vh;
   background-color: #fff;
   color: #8edafc;
   padding: 8px;
@@ -131,13 +119,18 @@ h5, h6{
 
 /* search */
 .search{
-  height: calc(100vh - 95vh);
+  height: 5%;
   background-color: #fff;
   display: flex;
   align-items: center;
   padding: 0 20px;
 }
 
+#cerca{
+  width: 600px;
+  height: 20px;
+  border-style: none;
+}
 .fa-search{
   color: #b1b1b1;
   padding-right: 15px;
@@ -147,7 +140,7 @@ h5, h6{
 /* contact */
 
 .contact{
-  height: calc(100vh - 20vh);
+  height: calc(100% - 21%);
   overflow-y: auto;
 }
 
@@ -183,14 +176,10 @@ h5, h6{
 
 /* header-right */
 .header-right{
-  height: calc(100vh - 93vh);
-  background-color: #f2f2f2;
-}
-
-.chat-header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 9%;
   background-color: #f2f2f2;
 }
 
@@ -209,7 +198,7 @@ h5, h6{
 /* chat */
 .chat-side{
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding: 20px;
 }
 
@@ -220,17 +209,17 @@ h5, h6{
 
 .chat {
   position: relative;
-  max-width: 75ch;
+  word-break: break-all;
   background-color: #fff;
   border-radius: 5px;
-  padding: 15px;
+  padding: 15px 10px;
 }
 
 .orario{
   position: absolute;
   bottom: 1px;
-  right: 5px;
-  font-size: 12px;
+  right: 3px;
+  font-size: 10px;
 }
 
 .inviato{
@@ -239,7 +228,6 @@ h5, h6{
 
 .inviato .chat {
   background-color: #d5f9ba;
-
 }
 
 .template{
@@ -250,30 +238,21 @@ h5, h6{
   display: none;
 }
 
-.templates{
-  display: none;
-}
-
-
 /* <!-- /chat --> */
 
 
 /* <!-- player --> */
-.player{
-  height: calc( 100vh - 97vh);
-}
-
 .inside-player{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 26px;
+  height: 37px;
   background-color: #f2f2f2;
 }
 
 
 #sent{
-  width: 40vw;
+  width: 600px;
   height: 20px;
   border-style: none;
 }
@@ -281,7 +260,6 @@ h5, h6{
 .sendMessage{
   cursor: pointer;
 }
-
 
 /* <!-- /player --> */
 
