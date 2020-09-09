@@ -34,28 +34,31 @@ function sentMessage(){
     $(".chat-side").append(templateMessage);
     $("#sent").val("");
 
+
   }
 }
 
 
-setTimeout(function(sentMessage){
-
+function sentMessage(){
   var inputText = $("#sent").val();
+  
+  setTimeout(function(){
 
-  if(inputText != ""){
+    if(inputText != ""){
 
-  var bot = ["ciao", "bene"];
+    var bot = ["ciao", "bene"];
 
-  var ricevuto = $(".template .inside-chat").clone();
+    var ricevuto = $(".template .inside-chat").clone();
 
-  ricevuto.find(".messaggio").text(bot[1]);
-  ricevuto.find(".orario").text(hour + ":" + min);
-  $(".chat-side").append(ricevuto);
+    ricevuto.find(".messaggio").text(bot[1]);
+    ricevuto.find(".orario").text(hour + ":" + min);
+    $(".chat-side").append(ricevuto);
 
   }
-  console.log(sentMessage);
-  }, 1000);
 
+  }, 1000)
+
+};
 
 
 
