@@ -119,7 +119,7 @@ h5, h6{
 
 /* search */
 .search{
-  height: 5%;
+  height: 8%;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -128,7 +128,7 @@ h5, h6{
 
 #cerca{
   width: 600px;
-  height: 20px;
+  height: 30px;
   border-style: none;
 }
 .fa-search{
@@ -260,6 +260,10 @@ h5, h6{
 .sendMessage{
   cursor: pointer;
 }
+
+/* .microphone, .airplain{
+  display: none;
+} */
 
 /* <!-- /player --> */
 
