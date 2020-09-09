@@ -17,17 +17,15 @@ $("#sent").keyup(
   }
 );
 
+var d = new Date();
+hour = d.getHours();
+min = d.getMinutes();
 
 function sentMessage(){
   var inputText = $("#sent").val();
 
   if(inputText != ""){
     var templateMessage = $(".template .inside-chat").clone();
-
-    var d = new Date();
-    hour = d.getHours();
-    min = d.getMinutes();
-
 
     templateMessage.find(".messaggio").text(inputText);
     templateMessage.find(".orario").text(hour + ":" + min);
@@ -36,9 +34,21 @@ function sentMessage(){
     $(".chat-side").append(templateMessage);
     $("#sent").val("");
 
-
   }
 }
+
+
+  setTimeout(function(){
+    var bot = ["ciao", "bene, tu?"];
+
+    var ricevuto = $(".template .inside-chat").clone();
+
+
+    ricevuto.find(".messaggio").text(bot[1]);
+    ricevuto.find(".orario").text(hour + ":" + min);
+    $(".chat-side").append(ricevuto);
+
+  }, 1000);
 
   }
 );
