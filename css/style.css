@@ -246,7 +246,7 @@ h5, h6{
 
 .popup{
   position: absolute;
-  /* display: none; */
+  display: none;
   text-align: center;
   width: 175px;
   background: #fff;
