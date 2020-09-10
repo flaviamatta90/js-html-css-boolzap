@@ -96,7 +96,7 @@ $("#cerca").keyup(function() {
 // Cancellare il messaggio
 $(".inside-chat").click(
   function(){
-    $(this).children(".popup").show();
+    $(this).find(".popup").show();
   }
 );
 
