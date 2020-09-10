@@ -92,30 +92,20 @@ $("#cerca").keyup(function() {
 // }
 // );
 
+
 // Cancellare il messaggio
-
-// $(".delete").click(
-//   function(){
-//     $(this).parent("li").hide();
-//     $("#modal").addClass("active");
-//     setTimeout(hideModal, 2000);
-//   }
-// );
-//
-// function hideModal(){
-//   $("#modal").removeClass("active");
-// }
-
 $(".inside-chat").click(
   function(){
     $(this).children("#popup").show();
   }
 );
+
 $(".ghost").click(
   function(){
     $(this).parents(".inside-chat").hide();
   }
 );
+
 
 // fine
   }
