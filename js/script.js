@@ -96,7 +96,7 @@ $("#cerca").keyup(function() {
 // Cancellare il messaggio
 $(".inside-chat").click(
   function(){
-    $(this).children("#popup").show();
+    $(this).children(".popup").show();
   }
 );
 
@@ -106,6 +106,10 @@ $(".ghost").click(
   }
 );
 
+// /Cancellare il messaggio
+
+
+// cambiare conversazione
 
 // fine
   }

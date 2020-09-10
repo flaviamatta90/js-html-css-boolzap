@@ -244,7 +244,7 @@ h5, h6{
   display: none;
 }
 
-#popup{
+.popup{
   position: absolute;
   /* display: none; */
   text-align: center;
@@ -253,7 +253,6 @@ h5, h6{
   border-radius: 5px;
   cursor: pointer;
   padding: 10px;
-
 }
 
 .ghost{
