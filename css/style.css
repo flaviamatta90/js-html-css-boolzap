@@ -258,6 +258,10 @@ h5, h6{
 .ghost{
   padding: 5px 0;
 }
+
+.different-chat{
+  display: none;
+}
 /* <!-- /chat --> */
 
 
