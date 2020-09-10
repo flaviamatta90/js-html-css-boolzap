@@ -131,6 +131,7 @@ h5, h6{
   height: 30px;
   border-style: none;
 }
+
 .fa-search{
   color: #b1b1b1;
   padding-right: 15px;
@@ -203,6 +204,7 @@ h5, h6{
 }
 
 .inside-chat{
+  display: none;
   display: flex;
   margin: 10px ;
   display: relative;
@@ -262,6 +264,7 @@ h5, h6{
 .different-chat{
   display: none;
 }
+
 /* <!-- /chat --> */
 
 
@@ -285,9 +288,7 @@ h5, h6{
   cursor: pointer;
 }
 
-.microphone{
-  display: none;
-}
+
 
 /* <!-- /player --> */
 

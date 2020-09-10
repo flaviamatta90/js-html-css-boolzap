@@ -86,9 +86,10 @@ $("#cerca").keyup(function() {
 
 // sparisce al send e appare il microfono
 
-// $("#sent").hover(function() {
-//   $(".airplain").addClass("display-none");
-//   $(".microphone").removeClass("display-none");
+// $(".microphone").focus(
+//   function() {
+//   $(".airplain").show();
+//   $(".microphone").hide();
 // }
 // );
 
@@ -107,7 +108,37 @@ $(".ghost").click(
 );
 
 // /Cancellare il messaggio
+// $(".inside-chat").removeClass("active");
+//
+// $(document).on("click", ".friends",
+// function(){
+//   var dataContatto = $(this).attr(".data-contatto");
+//
+//   $(".avatar-chat").addClass("display-none");
+//   if ($(".friends").hasClass("active") == true) {
+//     $(".friends").removeClass("active");
+//     $(".different-chat").removeClass("active");
+//     $(".inside-chat").removeClass("active");
+//   }
+//
+//   $(this).addClass("active");
+//   $(".different-chat [data-contatto = "" + dataContatto + ""]").addClass("active");
+//
+//   $(".inside-chat [data-contatto = "" + dataContatto + ""]").addClass("active");
 
+// $(".friends").click(
+//   function(){
+//
+//     var mexActive = $(".chat-side");
+//     mexActive.addClass(".nascosto");
+//     mexActive.removeClass(".active");
+//
+//   }
+//
+// );
+
+// }
+// );
 
 // cambiare conversazione
 
