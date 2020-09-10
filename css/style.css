@@ -254,6 +254,10 @@ h5, h6{
   border-radius: 5px;
 }
 
+.ghost{
+  border: 1px solid #000;
+  padding: 0 4px;
+}
 /* <!-- /chat --> */
 
 

@@ -111,6 +111,11 @@ $(".inside-chat").click(
     $(this).children("#popup").show();
   }
 );
+$(".ghost").click(
+  function(){
+    $(this).parents(".inside-chat").hide();
+  }
+);
 
 // fine
   }
