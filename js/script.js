@@ -17,7 +17,7 @@ $("#sent").keyup(
   }
 );
 
-function numeroRandom(min, max) {
+function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
@@ -48,13 +48,15 @@ function sentMessage(){
     $(".chat-side").append(templateMessage);
     $("#sent").val("");
 
+
 // cloud risposta ogni secondo
   setTimeout(function(){
-    var bot = ["Ciao", "bene", "E tu?", "Che mi dici?", "Son content* per te!", "Gni"," Uffa", "Bleehh"];
+    var bot = ["Ciao", "bene", "E tu?", "Che mi dici?", "Son content* per te!", "Gni"," Uffa", "Bleehh", "Seeee...ciaooo!", "Buongiorno", "Buonasera", "Eilàà", "Daaaiii???", "Anche secondo me!", "Non so quello... che preferisci", "OK!!!", "Mangiamo???"];
     var ricevuto = $(".template .inside-chat").clone();
 
-    ricevuto.find(".messaggio").text(bot[numeroRandom(0, 8)]);
+    ricevuto.find(".messaggio").text(bot[random(0, 16)]);
     ricevuto.find(".orario").text(time);
+
     $(".chat-side").append(ricevuto);
 
     }, 1000);
@@ -65,15 +67,15 @@ function sentMessage(){
 
 
 // ricerca amico
-$("#cerca").keydown(function() {
+$("#cerca").keyup(function() {
   var ricerca = $(this).val().toLowerCase();
 
   $(".friends").each(function() {
     var nomi = $(this).find(".name").text().toLowerCase();
     if (nomi.includes(ricerca)) {
-      $(this).fadeIn();
+      $(this).show();
     } else {
-      $(this).fadeOut();
+      $(this).hide();
     }
   }
 );
@@ -90,6 +92,25 @@ $("#cerca").keydown(function() {
 // }
 // );
 
+// Cancellare il messaggio
+
+// $(".delete").click(
+//   function(){
+//     $(this).parent("li").hide();
+//     $("#modal").addClass("active");
+//     setTimeout(hideModal, 2000);
+//   }
+// );
+//
+// function hideModal(){
+//   $("#modal").removeClass("active");
+// }
+
+$(".inside-chat").click(
+  function(){
+    $(this).children("#popup").show();
+  }
+);
 
 // fine
   }
