@@ -110,6 +110,8 @@ function(){
 
 // /Cancellare il messaggio
 
+// passare da una chat all'altra
+
 $(".friends").click(
    function(){
      $(".friends").removeClass("active");
@@ -126,44 +128,9 @@ $(".friends").click(
 
       $(".right .avatar-chat img").attr("src", img);
       $(".right .name-right").text(name);
-      $(".right .utlimo-accesso").text(time);
+      $(".right .ultimo-accesso time").text(time);
    }
-  )
-// $(".inside-chat").removeClass("active");
-//
-// $(document).on("click", ".friends",
-// function(){
-//   var dataContatto = $(this).attr(".data-contatto");
-//
-//   $(".avatar-chat").addClass("display-none");
-//   if ($(".friends").hasClass("active") == true) {
-//     $(".friends").removeClass("active");
-//     $(".different-chat").removeClass("active");
-//     $(".inside-chat").removeClass("active");
-//   }
-//
-//   $(this).addClass("active");
-//   $(".different-chat [data-contatto = "" + dataContatto + ""]").addClass("active");
-//
-//   $(".inside-chat [data-contatto = "" + dataContatto + ""]").addClass("active");
-
-// $(".friends").click(
-//   function(){
-//
-//     var mexActive = $(".chat-side");
-//     mexActive.addClass(".nascosto");
-//     mexActive.removeClass(".active");
-//
-//   }
-//
-// );
-
-// }
-// );
-
-// cambiare conversazione
-
-// /cambiare conversazione
+ );
 
 
 // fine
