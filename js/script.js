@@ -46,13 +46,14 @@ function sentMessage(){
     templateMessage.addClass("inviato");
 
     $(".chat-side").append(templateMessage);
-    $("#sent").val("");
 
 
 // cloud risposta ogni secondo
   setTimeout(function(){
     var bot = ["Ciao", "bene", "E tu?", "Che mi dici?", "Son content* per te!", "Gni"," Uffa", "Bleehh", "Seeee...ciaooo!", "Buongiorno", "Buonasera", "Eilàà", "Daaaiii???", "Anche secondo me!", "Non so quello... che preferisci", "OK!!!", "Mangiamo???"];
     var ricevuto = $(".template .inside-chat").clone();
+
+    $("#sent").val("");
 
     ricevuto.find(".messaggio").text(bot[random(0, 16)]);
     ricevuto.find(".orario").text(time);
@@ -95,19 +96,21 @@ $("#cerca").keyup(function() {
 
 
 // Cancellare il messaggio
-$(".inside-chat").click(
-  function(){
-    $(this).find(".popup").show();
-  }
-);
+$(document).on("click", ".arrow",
+function(){
+  $(this).siblings(".popup").toggle();
 
-$(".ghost").click(
-  function(){
-    $(this).parents(".inside-chat").hide();
-  }
-);
+  $(".ghost").click(
+    function(){
+      $(this).parents(".inside-chat").hide();
+    }
+  );
+})
+
 
 // /Cancellare il messaggio
+
+
 // $(".inside-chat").removeClass("active");
 //
 // $(document).on("click", ".friends",

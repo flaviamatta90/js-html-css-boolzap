@@ -56,8 +56,8 @@
 
         <!-- contact -->
         <div class="contact">
-          <div class="friends">
-            <img class="avatar active first" src="img/avatar_1.jpg" alt="">
+          <div class="friends active">
+            <img class="avatar" src="img/avatar_1.jpg" alt="">
             <ul class="contact-list">
               <li class="name" data-contatto = "0">
                 <a href="#"><h4>Michele</h4></a>
@@ -95,8 +95,8 @@
               <li class="name" data-contatto = "3">
                 <a href="#"><h4>Alessandro B.</h4></a>
               </li>
-              <li class="name">
-                <a href="#"><h6>Non poteva essere altrimenti</h6></a>
+              <li class="ultimo-accesso">
+                <!-- <a href="#"><h6>Ultimo accesso oggi alle <time> 11.10</time> </h6></a> -->
               </li>
             </ul>
           </div>
@@ -159,11 +159,11 @@
           <div class="avatar-chat">
             <img class="avatar" src="img/avatar_1.jpg" alt="">
             <ul class="contact-list">
-              <li>
+              <li class="name-right">
                 <a href="#"><h4>Michele</h4></a>
               </li>
-              <li>
-                <a href="#"><h6>Ultimo accesso ogi alle 15.40</h6></a>
+              <li class="utlimo-accesso">
+                <a href="#"><h6>Ultimo accesso oggi alle <time>15.40</time> </h6></a>
               </li>
             </ul>
           </div>
@@ -178,12 +178,16 @@
         <!-- /header-right -->
 
         <!-- chat -->
-        <div class="chat-side active">
-          <div class="inside-chat ">
+        <div class="chat-side">
+          <div class="inside-chat">
             <div class="chat">
               <div class="messaggio">
                 Ciao! Da qunto tempo!!
               </div>
+              <div class="arrow">
+                <i class="fas fa-angle-down"></i>
+              </div>
+
               <div class="orario">
                 14.31
                 <i class="check fas fa-check"></i>
@@ -196,10 +200,13 @@
             </div>
           </div>
 
-            <div class="inside-chat inviato active">
+            <div class="inside-chat inviato">
               <div class="chat">
                 <div class="messaggio">
                   Ciao, come va? Che mi dici?
+                </div>
+                <div class="arrow">
+                  <i class="fas fa-angle-down"></i>
                 </div>
                 <div class="orario">
                   14.31
@@ -215,10 +222,50 @@
 
         </div>
 
-        <div class="different-chat">
+        <!-- template -->
+        <div class="template">
+          <div class="inside-chat">
+            <div class="chat">
+              <div class="messaggio"></div>
+              <div class="arrow">
+                <i class="fas fa-angle-down"></i>
+              </div>
+              <div class="orario"></div>
+            <div class="popup">
+              Info messaggio
+              <div class="ghost">Cancella messaggio</div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- template -->
+
+        <!-- $(".friends").click(
+          function(){
+            $(".frinds").removeClass("active");
+            $(this).addClass("active");
+
+            $(this).attr("data-contatto");
+
+            var dataContatto = $(this).attr("data-contatto");
+
+            $(".inside-chat").removeClass("active");
+             $("friends[data-contatto = "+dataContatto+"]").addClass("active");
+
+             var img = $(this).find("img").attr("src");
+             var name = $(this).find(".name").text();
+             var time =$(this).find(".orario").text();
+
+             $(".right .avatar img").attr("src", img);
+             $(".right .name-right").text(name);
+             $(".right .ulimo-accesso").text(time);
+
+          }
+        ) -->
+        <!-- <div class="different-chat"> -->
 
           <!-- 0 -->
-          <div class="inside-chat different-chat active" data-contatto = "0">
+          <!-- <div class="inside-chat different-chat" data-contatto = "0">
             <div class="chat">
               <div class="messaggio">
                 Casa lavoro, lavoro casa!
@@ -252,8 +299,8 @@
             </div>
           </div>
 
-        <!-- 1 -->
-          <div class="inside-chat different-chat" data-contatto = "1">
+        1
+          < <div class="inside-chat different-chat" data-contatto = "1">
             <div class="chat">
               <div class="messaggio">
                 Eilàà!
@@ -285,10 +332,10 @@
               <div class="ghost">Cancella messaggio</div>
             </div>
           </div>
-        </div>
+        </div> --> -->
 
       <!-- 2 -->
-        <div class="inside-chat different-chat" data-contatto = "2">
+        <!-- <div class="inside-chat different-chat" data-contatto = "2">
           <div class="chat">
             <div class="messaggio">
               No basta!! Tra noi è finita!
@@ -320,10 +367,10 @@
               <div class="ghost">Cancella messaggio</div>
             </div>
           </div>
-        </div>
+        </div> -->
 
     <!-- 3 -->
-        <div class="inside-chat different-chat" data-contatto = "3">
+        <!-- <div class="inside-chat different-chat" data-contatto = "3">
           <div class="chat">
             <div class="messaggio">
               Usciamo?
@@ -355,10 +402,10 @@
               <div class="ghost">Cancella messaggio</div>
             </div>
           </div>
-        </div>
+        </div> -->
 
   <!-- 4 -->
-        <div class="inside-chat different-chat" data-contatto = "4">
+        <!-- <div class="inside-chat different-chat" data-contatto = "4">
           <div class="chat">
             <div class="messaggio">
               Dobbiamo fare il regalo di compleanno a Chiara!
@@ -390,10 +437,10 @@
               <div class="ghost">Cancella messaggio</div>
             </div>
           </div>
-        </div>
+        </div> -->
 
 <!-- 5 -->
-        <div class="inside-chat different-chat" data-contatto = "5">
+        <!-- <div class="inside-chat different-chat" data-contatto = "5">
           <div class="chat">
             <div class="messaggio">
               Ci beviamo un caffè insieme?
@@ -425,10 +472,10 @@
               <div class="ghost">Cancella messaggio</div>
             </div>
           </div>
-        </div>
+        </div> -->
 
 <!-- 6 -->
-        <div class="inside-chat different-chat" data-contatto = "6">
+        <!-- <div class="inside-chat different-chat" data-contatto = "6">
           <div class="chat">
             <div class="messaggio">
               Sono triste!
@@ -460,10 +507,10 @@
             <div class="ghost">Cancella messaggio</div>
           </div>
         </div>
-        </div>
+        </div> -->
 
 <!-- 7 -->
-        <div class="inside-chat different-chat" data-contatto = "7">
+        <!-- <div class="inside-chat different-chat" data-contatto = "7">
           <div class="chat">
             <div class="messaggio">
               Non ho piu fantasia!
@@ -495,24 +542,10 @@
             <div class="ghost">Cancella messaggio</div>
           </div>
         </div>
-        </div>
+        </div> -->
 
-      </div>
+      <!-- </div> -->
 
-        <!-- template -->
-        <div class="template">
-          <div class="inside-chat">
-            <div class="chat">
-              <div class="messaggio"></div>
-              <div class="orario"></div>
-            <div class="popup">
-              Info messaggio
-              <div class="ghost">Cancella messaggio</div>
-            </div>
-            </div>
-          </div>
-        </div>
-        <!-- template -->
 
         <!-- /chat -->
 

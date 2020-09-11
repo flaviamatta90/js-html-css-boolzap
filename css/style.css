@@ -207,15 +207,16 @@ h5, h6{
   display: none;
   display: flex;
   margin: 10px ;
-  display: relative;
 }
 
 .chat {
+  display: flex;
   position: relative;
+  max-width: 300px;
   word-break: break-all;
   background-color: #fff;
   border-radius: 5px;
-  padding: 15px 10px;
+  padding: 20px;
 }
 
 .orario{
@@ -238,6 +239,17 @@ h5, h6{
   background-color: #d5f9ba;
 }
 
+.arrow{
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  color:#b1b1b1;
+}
+
+.inside-chat:hover .arrow{
+  display: block;
+}
+
 .template{
   align-self: flex-end;
   background-color: #d5f9ba;
@@ -255,7 +267,14 @@ h5, h6{
   border-radius: 5px;
   cursor: pointer;
   padding: 10px;
+  box-shadow: 2px 1px 10px #fefefe;
+  left: 0;
 }
+
+.inside-chat{
+  right:0;
+}
+
 
 .ghost{
   padding: 5px 0;
