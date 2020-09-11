@@ -124,7 +124,7 @@ $(".friends").click(
       var name = $(this).find(".contact-name").text();
       var time =$(this).find(".contact-lastmess").text();
 
-      $(".right .avatar img").attr("src", img);
+      $(".right .avatar-chat img").attr("src", img);
       $(".right .name-right").text(name);
       $(".right .utlimo-accesso").text(time);
    }
