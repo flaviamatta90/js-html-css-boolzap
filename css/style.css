@@ -153,13 +153,24 @@ h5, h6{
 }
 
 .avatar{
-  max-width: 5vw;
-  max-height: 5vh;
+  width: 40px;
+  height: 40px;
   padding: 2px;
 }
 
 .contact-list li{
   margin: 0px 20px;
+}
+
+
+.contact-list .contact-time {
+  margin-left: auto;
+  align-self: flex-end;
+
+}
+
+.friends.active{
+  background-color: yellow;
 }
 /* /contact */
 
@@ -267,12 +278,12 @@ h5, h6{
   border-radius: 5px;
   cursor: pointer;
   padding: 10px;
-  box-shadow: 2px 1px 10px #fefefe;
-  left: 0;
+  box-shadow: 2px 1px 10px #000;
 }
 
-.inside-chat{
-  right:0;
+.popup .pop-bot{
+  right: 0;
+  left: auto;
 }
 
 
@@ -280,9 +291,7 @@ h5, h6{
   padding: 5px 0;
 }
 
-.different-chat{
-  display: none;
-}
+
 
 /* <!-- /chat --> */
 
