@@ -247,7 +247,7 @@ h5, h6{
   color: #0073f7;
 }
 
-.inviato{
+ .inviato .inside-chat{
   justify-content: flex-end;
 }
 

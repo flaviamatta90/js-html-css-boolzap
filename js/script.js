@@ -112,13 +112,13 @@ function(){
 
 $(".friends").click(
    function(){
-     $(".frinds").removeClass("active");
+     $(".friends").removeClass("active");
      $(this).addClass("active");
 
      var dataContatto = $(this).attr("data-contatto");
 
      $(".inside-chat").removeClass("active");
-      $("friends[data-conversazione = "+dataContatto+"]").addClass("active");
+     $(".friends[data-conversazione*= "+dataContatto+"]")
 
       var img = $(this).find("img").attr("src");
       var name = $(this).find(".contact-name").text();
