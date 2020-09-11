@@ -214,15 +214,20 @@ h5, h6{
   padding: 20px;
 }
 
-.inside-chat{
-  display: flex;
-  margin: 10px ;
+.container-chat{
   display: none;
 }
 
-.inside-chat.active{
+.container-chat.active{
   display: block;
 }
+
+
+.inside-chat{
+  display: flex;
+  margin: 10px ;
+}
+
 
 .chat {
   display: flex;
@@ -247,7 +252,7 @@ h5, h6{
   color: #0073f7;
 }
 
- .inviato .inside-chat{
+.inviato{
   justify-content: flex-end;
 }
 

@@ -68,7 +68,7 @@ function sentMessage(){
 
 
 // ricerca amico
-$("#cerca").keyup(function() {
+$("#cerca").keypress(function() {
   var ricerca = $(this).val().toLowerCase();
 
   $(".friends").each(function() {
@@ -117,7 +117,7 @@ $(".friends").click(
 
      var dataContatto = $(this).attr("data-contatto");
 
-     $(".inside-chat").removeClass("active");
+     $(".container-chat").removeClass("active");
      $(".friends[data-conversazione*= "+dataContatto+"]")
 
       var img = $(this).find("img").attr("src");
