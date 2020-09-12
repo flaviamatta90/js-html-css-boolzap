@@ -43,7 +43,6 @@ function sentMessage(){
 // cloud verde
     templateMessage.find(".messaggio").text(inputText);
     templateMessage.find(".orario").text(time);
-    templateMessage.find(".orario").text(".check");
 
     templateMessage.addClass("inviato");
 
@@ -89,12 +88,12 @@ $("#cerca").keypress(function() {
 
 // sparisce al send e appare il microfono
 
-// $(".microphone").focus(
-//   function() {
-//   $(".airplain").show();
-//   $(".microphone").hide();
-// }
-// );
+$(".airplain-microphone").hover(
+  function() {
+  $(".airplain").show();
+  $(".microphone").hide();
+}
+);
 
 
 // Cancellare il messaggio
@@ -134,6 +133,15 @@ $(".friends").click(
    }
  );
 
+
+// emoticon
+$(".emoticon").click(
+  function(){
+    $(this).children(".lista-emoticon").toggle()
+
+  }
+);
+// /emoticon
 
 // fine
   }
