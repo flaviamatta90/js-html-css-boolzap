@@ -46,8 +46,11 @@ function sentMessage(){
 
     templateMessage.addClass("inviato");
 
-    $(".chat-side").append(templateMessage);
+    $(".container-chat.active").append(templateMessage);
 
+    var element = document.querySelector(".container-chat.active .inside-chat:last-child");
+
+    element.scrollIntoView();
 
 // cloud risposta ogni secondo
   setTimeout(function(){
@@ -59,8 +62,12 @@ function sentMessage(){
     ricevuto.find(".messaggio").text(bot[random(0, 16)]);
     ricevuto.find(".orario").text(time);
 
-    $(".chat-side").append(ricevuto);
+    $(".container-chat.active").append(ricevuto);
 
+    var element = document.querySelector(".container-chat.active .inside-chat:last-child");
+
+    element.scrollIntoView();
+    
     }, 1000);
 
   }
@@ -69,20 +76,22 @@ function sentMessage(){
 
 
 // ricerca amico
-$("#cerca").keypress(function() {
+$("#cerca").keyup(function() {
   var ricerca = $(this).val().toLowerCase();
 
-  $(".friends").each(function() {
-    var nomi = $(this).find(".contact-name").text().toLowerCase();
-    if (nomi.includes(ricerca)) {
-      $(this).show();
-    } else {
-      $(this).hide();
-    }
+  if (ricerca == "") {
+    $(".friends").show();
+  } else {
+    $(".friends").each(function() {
+      var nomi = $(this).find(".contact-name").text().toLowerCase();
+      if (nomi.includes(ricerca)) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    })
   }
-);
-}
-);
+});
 // /ricerca amico
 
 
@@ -121,7 +130,8 @@ $(".friends").click(
      var dataContatto = $(this).attr("data-contatto");
 
      $(".container-chat").removeClass("active");
-     $(".friends[data-conversazione*= "+dataContatto+"]")
+
+     $('.container-chat[data-contatto="'+dataContatto+'"]').addClass('active');
 
       var img = $(this).find("img").attr("src");
       var name = $(this).find(".contact-name").text();
@@ -135,12 +145,19 @@ $(".friends").click(
 
 
 // emoticon
-$(".emoticon").click(
+$(".smile").click(
   function(){
-    $(this).children(".lista-emoticon").toggle()
-
+    $(".container-lista-emoticon").show()
   }
 );
+
+$(".lista-emoticon li").click(function(){
+  $(".container-lista-emoticon").hide();
+  var emoticon = $(this).html();
+  var inputText = $("#sent").val();
+  $("#sent").val(inputText + emoticon);
+  $("#sent").focus();
+})
 // /emoticon
 
 // fine
