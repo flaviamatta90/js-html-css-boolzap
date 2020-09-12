@@ -25,9 +25,7 @@ p{
   font-size: 13px;
 }
 
-h4{
-  margin-top: 10px;
-}
+
 h5, h6{
   color: #b1b1b1;
 }
@@ -82,7 +80,7 @@ h5, h6{
 
 .icon{
   color: #b1b1b1;
-  padding: 2px 5px;
+  padding: 2px 10px;
 }
 /* <!-- /header-left --> */
 
@@ -160,17 +158,17 @@ h5, h6{
 
 .contact-list li{
   margin: 0px 20px;
+  padding-top: 4px;
 }
 
-
-.contact-list .contact-time {
-  margin-left: auto;
+span{
   align-self: flex-end;
+  right: 0;
 
 }
 
 .friends.active{
-  background-color: yellow;
+  background-color: lightgrey;
 }
 /* /contact */
 
@@ -204,6 +202,7 @@ h5, h6{
 .avatar-chat img{
   margin: 5px;
 }
+
 
 /* header-right */
 

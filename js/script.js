@@ -43,6 +43,8 @@ function sentMessage(){
 // cloud verde
     templateMessage.find(".messaggio").text(inputText);
     templateMessage.find(".orario").text(time);
+    templateMessage.find(".orario").text(".check");
+
     templateMessage.addClass("inviato");
 
     $(".chat-side").append(templateMessage);
@@ -72,7 +74,7 @@ $("#cerca").keypress(function() {
   var ricerca = $(this).val().toLowerCase();
 
   $(".friends").each(function() {
-    var nomi = $(this).find(".name").text().toLowerCase();
+    var nomi = $(this).find(".contact-name").text().toLowerCase();
     if (nomi.includes(ricerca)) {
       $(this).show();
     } else {
