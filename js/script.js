@@ -6,16 +6,14 @@ $(document).ready(
 $(".sent-message").click(
   function(){
     sentMessage();
-  }
-);
+  });
 
 $("#sent").keyup(
   function(event){
     if(event.which == 13){
       sentMessage();
     }
-  }
-);
+  });
 
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -48,9 +46,12 @@ function sentMessage(){
 
     $(".container-chat.active").append(templateMessage);
 
+    // scrollbar
     var element = document.querySelector(".container-chat.active .inside-chat:last-child");
 
     element.scrollIntoView();
+
+    // scrollbar
 
 // cloud risposta ogni secondo
   setTimeout(function(){
@@ -67,7 +68,7 @@ function sentMessage(){
     var element = document.querySelector(".container-chat.active .inside-chat:last-child");
 
     element.scrollIntoView();
-    
+
     }, 1000);
 
   }
@@ -101,8 +102,7 @@ $(".airplain-microphone").hover(
   function() {
   $(".airplain").show();
   $(".microphone").hide();
-}
-);
+});
 
 
 // Cancellare il messaggio
@@ -114,9 +114,8 @@ function(){
     function(){
       $(this).parents(".inside-chat").hide();
     }
-  );
-})
-
+  )
+});
 
 // /Cancellare il messaggio
 
@@ -135,13 +134,14 @@ $(".friends").click(
 
       var img = $(this).find("img").attr("src");
       var name = $(this).find(".contact-name").text();
-      var time =$(this).find(".contact-lastmess").text();
+      var time = $(this).find(".contact-lastmess").text();
+      var time = $(this).find(".contact-time").text();
+
 
       $(".right .avatar-chat img").attr("src", img);
       $(".right .name-right").text(name);
-      $(".right .ultimo-accesso time").text(time);
-   }
- );
+      $(".right .ultimo-accesso span").text(time);
+   });
 
 
 // emoticon
@@ -161,5 +161,4 @@ $(".lista-emoticon li").click(function(){
 // /emoticon
 
 // fine
-  }
-);
+});
