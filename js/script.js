@@ -2,6 +2,7 @@
 $(document).ready(
   function (){
 
+
 // funzioni generali
 $(".sent-message").click(
   function(){
@@ -31,6 +32,7 @@ if (min < 10){
 // /funzioni generali
 
 
+
 // inviare un messaggio inserendolo nel cloud opportuno
 function sentMessage(){
   var inputText = $("#sent").val();
@@ -50,7 +52,6 @@ function sentMessage(){
     var element = document.querySelector(".container-chat.active .inside-chat:last-child");
 
     element.scrollIntoView();
-
     // scrollbar
 
 // cloud risposta ogni secondo
@@ -65,15 +66,18 @@ function sentMessage(){
 
     $(".container-chat.active").append(ricevuto);
 
+// scrollbar
     var element = document.querySelector(".container-chat.active .inside-chat:last-child");
 
     element.scrollIntoView();
+// /scrollbar
 
     }, 1000);
 
   }
 };
 // /inviare un messaggio inserendolo nel cloud opportuno
+
 
 
 // ricerca amico
@@ -96,13 +100,15 @@ $("#cerca").keyup(function() {
 // /ricerca amico
 
 
-// sparisce al send e appare il microfono
 
+// sparisce al send e appare il microfono
 $(".airplain-microphone").hover(
   function() {
   $(".airplain").show();
   $(".microphone").hide();
 });
+// /sparisce al send e appare il microfono
+
 
 
 // Cancellare il messaggio
@@ -116,11 +122,11 @@ function(){
     }
   )
 });
-
 // /Cancellare il messaggio
 
-// passare da una chat all'altra
 
+
+// passare da una chat all'altra
 $(".friends").click(
    function(){
      $(".friends").removeClass("active");
@@ -142,6 +148,8 @@ $(".friends").click(
       $(".right .name-right").text(name);
       $(".right .ultimo-accesso span").text(time);
    });
+// passare da una chat all'altra
+
 
 
 // emoticon

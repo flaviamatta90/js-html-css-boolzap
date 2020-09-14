@@ -11,6 +11,10 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+.flex{
+  display: flex;
+  align-items: center;
+}
 
 li{
   list-style: none;
@@ -73,10 +77,8 @@ h5, h6{
 /* <!-- header-left --> */
 .header-left {
   background-color: #f2f2f2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 8%;
+  justify-content: space-between;
 }
 
 .me{
@@ -90,8 +92,6 @@ h5, h6{
 .notify{
   height: 8%;
   background-color: #8edafc;
-  display: flex;
-  align-items: center;
 }
 
 .icon-bell{
@@ -120,8 +120,6 @@ h5, h6{
 .search{
   height: 8%;
   background-color: #fff;
-  display: flex;
-  align-items: center;
   padding: 0 20px;
 }
 
@@ -145,8 +143,6 @@ h5, h6{
 }
 
 .friends{
-  display: flex;
-  align-items: center;
   margin-top: auto;
   background-color: #f2f2f2;
   cursor: pointer;
@@ -174,7 +170,7 @@ span{
 }
 
 .friends.active{
-  background-color: lightgrey;
+  background-color: #E2DFE2;
 }
 /* /contact */
 
@@ -192,23 +188,18 @@ span{
 
 /* header-right */
 .header-right{
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   height: 9%;
   background-color: #f2f2f2;
 }
 
 .avatar-chat{
-  display: flex;
-  align-self: flex-start;
   justify-content: center;
 }
 
 .avatar-chat img{
   margin: 5px;
 }
-
 
 /* header-right */
 
@@ -243,7 +234,6 @@ span{
   background-color: #fff;
   border-radius: 5px;
   padding: 20px;
-
 }
 
 .container-orario{
@@ -321,8 +311,6 @@ span{
 
 /* <!-- player --> */
 .inside-player{
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   height: 37px;
   background-color: #f2f2f2;
